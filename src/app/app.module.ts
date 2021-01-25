@@ -11,6 +11,8 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { BreadcrumsComponent } from './shared/breadcrums/breadcrums.component';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
+import { NotfoundComponent } from './pages/notfound/notfound.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -23,10 +25,12 @@ import { RegisterComponent } from './auth/register/register.component';
     FooterComponent,
     BreadcrumsComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    NotfoundComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
